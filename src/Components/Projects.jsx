@@ -5,22 +5,22 @@ import "../Styling/Projects.css";
 function Projects() {
   const data = [
     {
-      url: "https://b-lu-jdru1umss-leozaddas-projects.vercel.app/",
+      url: "https://swole--mate.vercel.app/",
       title: "SwoleMate",
       description: "Helps bodybuilders track workouts, log lifts, and see results.",
     },
     {
-      url: "https://b-l-u-e.vercel.app/",
-      title: "Momentum",
+      url: "https://fit--notes.vercel.app/",
+      title: "Fit-Notes",
       description: "Simple app for trainers and clients to track progress without messy notes.",
     },
     {
-      url: "https://analytics-project-pgu3.vercel.app/",
+      url: "https://dethink-decaf.vercel.app/",
       title: "DETHINK DECAF",
       description: "Shows how visitors use your site so you can convert more people into paying clients.",
     },
     {
-      url: "https://nutrition-app-flame.vercel.app/",
+      url: "https://forkgiveness.vercel.app/",
       title: "Forkgiveness",
       description: "A landing page for a nutrition coach that brings in new clients every week.",
     },
