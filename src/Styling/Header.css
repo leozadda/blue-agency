@@ -35,6 +35,7 @@
 .header-button{
     border-radius: .5em;
     border: solid 1px #FFFFE6;
+    color: black;
     font-size: 1rem;
     font-family: 'Azeret Mono', sans-serif;
     font-weight: 700;
