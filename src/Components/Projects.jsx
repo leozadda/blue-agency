@@ -22,7 +22,7 @@ function Projects() {
     {
       url: "https://forkgiveness.vercel.app/", 
       title: "Forkgiveness",
-      description: "A landing page for a nutrition coach that brings in new clients every week.",
+      description: "A landing page for an online coach that brings in new clients every week.",
     },
   ];
 

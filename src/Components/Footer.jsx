@@ -2,6 +2,11 @@ import { useState } from "react";
 import "../Styling/Footer.css";
 
 function Footer() {
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:help@b-lu-e.com?subject=Business Growth Inquiry";
+  };
+
   return (
     <div className="footer">
       <div className="footer-content"> {/* ADD THIS DIV */}
@@ -9,7 +14,7 @@ function Footer() {
         <p className="footer-p">
         Let’s chat and see how we can help you.
         </p>
-        <button className="footer-button">Book a chat</button>
+        <button onClick={handleEmailClick} className="footer-button">Book a chat</button>
       </div> {/* ADD THIS CLOSING DIV */}
     </div>
   );
