@@ -7,7 +7,7 @@ function Header() {
       <div className='header-content'>
         <h1 className='header-h1'>We build custom software to grow your fitness business.</h1>
         <p className='header-p'>We handle the code, you handle the business.</p>
-        <button className='header-button'>Book a call</button>
+        <button className='header-button'>Book a chat</button>
       </div>
     </div>
   )

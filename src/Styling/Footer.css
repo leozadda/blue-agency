@@ -4,7 +4,7 @@
     justify-content: center;
     margin: 0rem 0;
     padding: 3em 0;
-    border-top: solid 1px #FFFFE6;
+    border-top: solid 2px #FFFFE6;
 }
 
 .footer-content {
@@ -19,20 +19,20 @@
 .footer-h1 {
     font-family: 'Azeret Mono', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 5rem;
     color: #FFFFE6;
     margin: 0 0 1rem 0;
     width: 100%; /* h1 takes full width of container */
-    max-width: 500px; /* But constrained to this max */
+    max-width: 1000px; /* But constrained to this max */
 }
 
 .footer-p {
     font-family: 'Clash Display', sans-serif;
-    font-size: 1rem;
+    font-size: 1.7rem;
     color: #FFFFE6;
     margin: 0;
     width: 100%; /* p takes full width available */
-    max-width: 300px; /* But much narrower than h1 */
+    max-width: 500px; /* But much narrower than h1 */
 }
 
 .footer-button{
@@ -40,7 +40,7 @@
     border: solid 1px #FFFFE6;
     font-family: 'Azeret Mono', sans-serif;
     font-weight: 700;
-    font-size: .7rem;
+    font-size: 1rem;
     color: #000000;
     padding: .7em;
     margin: 3em 0;
@@ -78,7 +78,7 @@
     .footer-button {
         font-size: .7em;
         padding: .8em 1.2em;
-        margin: 1.5em 0;
+        margin: 2em 0;
     }
 }
 

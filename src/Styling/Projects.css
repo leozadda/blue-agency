@@ -1,16 +1,16 @@
 .projects-list {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .project-header{
-  margin: 2em 0em;
+  margin: 1em 0em;
 }
 
 .project-header h1{
   text-align: center;
-  font-size: 3em;
+  font-size: 5em;
   margin: 0;
   color: #FFFFE6;
   font-family: 'Azeret Mono', sans-serif;
@@ -20,15 +20,15 @@
 .project-header p{
   text-align: center;
   margin: 0;
-  padding-top: .5em;
+  padding-top: .8em;
   font-family: 'Clash Display', sans-serif;
-  font-size: .9rem;
+  font-size: 1.5rem;
   color: #FFFFE6;
 }
 
 .project-entry {
-  border-bottom: 1px solid #FFFFE6;
-  padding: 1.5rem 0;
+  border-bottom: 2px solid #FFFFE6;
+  padding: 2.5rem 0;
 }
 
 .project-entry:last-child {
@@ -42,13 +42,13 @@
 }
 
 .project-title {
-  font-size: 1.2rem;
-  margin: 0 0 0.3rem 0;
+  font-size: 2.5rem;
+  margin: 0 0 .5rem 0;
   color: #FFFFE6;
   font-family: 'Azeret Mono', sans-serif;
   font-weight: 700;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom-color 0.5s ease;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom-color 0.3s ease;
   display: inline-block;
 }
 
@@ -58,7 +58,7 @@
 
 .project-description {
   font-family: 'Clash Display', sans-serif;
-  font-size: .8rem;
+  font-size: 1.25rem;
   color: #FFFFE6;
   margin: 0;
 }
@@ -67,6 +67,19 @@
 @media (max-width: 768px) {
   .projects-list {
     padding: 2rem 1rem;
+  }
+
+  .project-header h1{
+    text-align: center;
+    font-size: 3em;
+    padding: .5em 0;
+  }
+
+  .project-header p{
+    text-align: center;
+    font-size: 1em;
+    padding: .5em 0;
+
   }
   
   .project-title {
@@ -80,6 +93,7 @@
   .project-link:hover {
     transform: translateX(4px);
   }
+  
 }
 
 @media (max-width: 480px) {
