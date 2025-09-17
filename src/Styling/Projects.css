@@ -1,0 +1,93 @@
+.projects-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.project-header{
+  margin: 2em 0em;
+}
+
+.project-header h1{
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  color: #FFFFE6;
+  font-family: 'Azeret Mono', sans-serif;
+  font-weight: 700;
+
+}
+.project-header p{
+  text-align: center;
+  margin: 0;
+  padding-top: .5em;
+  font-family: 'Clash Display', sans-serif;
+  font-size: .9rem;
+  color: #FFFFE6;
+}
+
+.project-entry {
+  border-bottom: 1px solid #FFFFE6;
+  padding: 1.5rem 0;
+}
+
+.project-entry:last-child {
+  border-bottom: none;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 0 0 0.3rem 0;
+  color: #FFFFE6;
+  font-family: 'Azeret Mono', sans-serif;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.5s ease;
+  display: inline-block;
+}
+
+.project-link:hover .project-title {
+  border-bottom-color: #FFFFE6;
+}
+
+.project-description {
+  font-family: 'Clash Display', sans-serif;
+  font-size: .8rem;
+  color: #FFFFE6;
+  margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .projects-list {
+    padding: 2rem 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+  
+  .project-link:hover {
+    transform: translateX(4px);
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-list {
+    padding: 2rem 2rem;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+  }
+}
