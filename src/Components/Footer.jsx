@@ -14,7 +14,7 @@ function Footer() {
         <p className="footer-p">
         Let’s chat and see how we can help you.
         </p>
-        <button onClick={handleEmailClick} className="footer-button">Book a chat</button>
+        <button onClick={handleEmailClick} className="footer-button">Get Started</button>
       </div> {/* ADD THIS CLOSING DIV */}
     </div>
   );
