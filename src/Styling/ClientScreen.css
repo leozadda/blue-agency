@@ -1,0 +1,335 @@
+/* Container and layout */
+.questionnaire-container {
+  min-height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.questionnaire-card {
+  background: rgb(0, 0, 0);
+  border-radius: 3em;
+  border: solid 2px #ffffe6;
+  padding: 3rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Progress bar */
+.progress-section {
+  margin-bottom: 2rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #ffffe6;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ffffe623;
+  border-radius: 9999px;
+  height: 8px;
+}
+
+.progress-fill {
+  background-color: #ffffe6;
+  height: 8px;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+/* Question section */
+.question-section {
+  margin-bottom: 2rem;
+}
+
+.question-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffe6;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  padding: 0;
+}
+
+/* Multiple choice options */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-label {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Clash Display", sans-serif;
+}
+
+.option-label:hover {
+  background-color: #ffffe6;
+  color: #000000;
+  border: solid 2px #000000;
+}
+
+.option-label input[type="radio"] {
+  margin-right: 0.5rem;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.option-label input[type="radio"]:checked + .option-text {
+  font-weight: 500;
+  color: #000000;
+  font-family: "Clash Display", sans-serif;
+}
+
+.option-label:has(input:checked) {
+  background-color: #ffffe6;
+  color: #000000;
+  border: solid 2px #000000;
+}
+
+.option-text {
+  color: #ffffe6;
+  line-height: 1.5;
+}
+/* Solution 1: More specific selector for hover */
+.option-label:hover .option-text {
+  color: #000000;
+}
+
+/* Solution 2: Use !important (less preferred) */
+.option-label:hover {
+  background-color: #ffffe6;
+  color: #000000 !important;
+  border: solid 2px #000000;
+}
+
+/* Solution 3: Target all text within the label on hover */
+.option-label:hover,
+.option-label:hover * {
+  color: #000000;
+}
+
+/* Textarea input */
+.textarea-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.5s ease;
+  background-color: #000000;
+  color: #ffffe6;
+  font-family: "Clash Display", sans-serif;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.textarea-input:focus {
+  outline: none;
+  border-color: #ffffe6;
+}
+
+.textarea-input::placeholder {
+  color: #ffffe638;
+}
+
+/* Status message */
+.status-message {
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  background-color: #000000;
+  color: #ffffe6;
+  border: 2px solid #ffffe6;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  font-family: "Clash Display", sans-serif;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #000000;
+  color: #ffffe6;
+  border: solid 2px #ffffe6;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 500;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #000000;
+}
+
+.btn-primary:disabled {
+  background-color: black;
+  border: solid 2px #ffffe61f;
+  color: #ffffe61f;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffe6;
+  border: 2px solid #ffffe6;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  border-color: #d1d5db;
+  background-color: #000000;
+}
+
+.success-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Success screen */
+.success-message h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffe6;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 700;
+}
+
+.success-message p {
+  color: #ffffe6;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  width: 70%;
+  font-family: "Clash Display", sans-serif;
+}
+
+.close-button {
+  background-color: #000000;
+  color: #ffffe6;
+  border: solid 2px #ffffe6;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 500;
+}
+
+.questionnaire-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffe6;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.questionnaire-card p {
+  color: #ffffe6;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Hide radio button dots */
+.option-label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+/* Alternative approach - completely hide radio buttons */
+.option-label input[type="radio"] {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .questionnaire-container {
+    padding: 0.5rem;
+  }
+
+  .questionnaire-card {
+    padding: 2rem;
+    border: none;
+  }
+
+  .question-section h2 {
+    font-size: 1.5rem;
+  }
+  .success-message h2 {
+    font-size: 3em;
+  }
+  .success-message p {
+    font-size: 1em;
+  }
+
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 30%;
+    border-radius: 1em;
+    margin: 0.5em 0;
+  }
+  .close-button {
+    margin: 0.5em 0;
+  }
+}

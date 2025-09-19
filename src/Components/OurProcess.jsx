@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "../Styling/WhatWeDo.css";
+import "../Styling/OurProcess.css";
 import firstImage from "../Assets/plan.png";
 import secondImage from "../Assets/ship.png";
 import forthImage from "../Assets/monitor.png";
 
-function WhatWeDo() {
+function OurProcess() {
   const data = [
     {
       title: "1. Plan",
@@ -15,7 +15,7 @@ function WhatWeDo() {
     {
       title: "2. Ship",
       explain:
-      "We build your app or website and launch it, so clients can start booking, tracking, and buying right away.",
+        "We build your app or website and launch it, so clients can start booking, tracking, and buying right away.",
       image: secondImage,
     },
     {
@@ -27,11 +27,14 @@ function WhatWeDo() {
   ];
 
   return (
-    <div className="whatwedo-container">
-      <div className="whatwedo-grid">
+    <div className="our-process-container">
+      <div className="our-process-grid">
         {data.map((item, index) => {
           return (
-            <div key={index} className={`whatwedo-item ${index % 2 !== 0 ? 'reverse' : ''}`}>
+            <div
+              key={index}
+              className={`our-process-item ${index % 2 !== 0 ? "reverse" : ""}`}
+            >
               <div className="item-image">
                 <img src={item.image} alt={item.title} />
               </div>
@@ -47,4 +50,4 @@ function WhatWeDo() {
   );
 }
 
-export default WhatWeDo;
+export default OurProcess;

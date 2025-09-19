@@ -7,22 +7,26 @@ function Projects() {
     {
       url: "https://swole--mate.vercel.app/", //connect backend
       title: "SwoleMate",
-      description: "Helps bodybuilders track workouts, log lifts, and see results.",
+      description:
+        "Helps bodybuilders track workouts, log lifts, and see results.",
     },
     {
       url: "https://fit--notes.vercel.app/",
       title: "Fit-Notes",
-      description: "Simple app for trainers and clients to track progress without messy notes.",
+      description:
+        "Simple app for trainers and clients to track progress without messy notes.",
     },
     {
       url: "https://dethink-decaf.vercel.app/", //fix tab color and name
       title: "DETHINK DECAF",
-      description: "Shows how visitors use your site so you can convert more people into paying clients.",
+      description:
+        "Shows how visitors use your site so you can convert more people into paying clients.",
     },
     {
-      url: "https://forkgiveness.vercel.app/", 
+      url: "https://forkgiveness.vercel.app/",
       title: "Forkgiveness",
-      description: "A landing page for an online coach that brings in new clients every week.",
+      description:
+        "A landing page for an online coach that brings in new clients every week.",
     },
   ];
 

@@ -1,11 +1,11 @@
-.whatwedo-container {
+.our-process-container {
   padding: 2rem 3rem;
   max-width: 100vw;
   margin: 0 auto;
   border-bottom: solid 2px #ffffe6;
 }
 
-.whatwedo-grid {
+.our-process-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -13,7 +13,7 @@
   min-height: 600px;
 }
 
-.whatwedo-item {
+.our-process-item {
   border-radius: 12px;
   padding: 1.5rem;
   display: flex;
@@ -21,7 +21,7 @@
   gap: 1rem;
 }
 
-.whatwedo-item.reverse {
+.our-process-item.reverse {
   flex-direction: row-reverse;
 }
 
@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   border: solid 2px #ffffe6;
-  padding: 1em;
+  padding: 2em;
 }
 
 .item-image img {
@@ -51,7 +51,7 @@
   padding: 4em;
 }
 
-.whatwedo-item h3 {
+.our-process-item h3 {
   font-size: 5rem;
   color: #ffffe6;
   font-family: "Azeret Mono", sans-serif;
@@ -59,7 +59,7 @@
   margin: 0;
 }
 
-.whatwedo-item p {
+.our-process-item p {
   font-size: 1.5rem;
   line-height: 2;
   font-family: "Clash Display", sans-serif;
@@ -70,13 +70,13 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .whatwedo-grid {
+  .our-process-grid {
     display: block;
     gap: 1em;
   }
 
-  .whatwedo-item,
-  .whatwedo-item.reverse {
+  .our-process-item,
+  .our-process-item.reverse {
     display: block;
     margin: 2rem 0;
     padding: 0;
@@ -87,7 +87,7 @@
     height: 200px;
     margin-bottom: 1rem;
     border: solid 2px #ffffe6;
-    padding: 1em;
+    padding: 2em;
     border-radius: 5em;
   }
 
@@ -96,19 +96,19 @@
     padding: 1rem 1rem;
   }
 
-  .whatwedo-item h3 {
+  .our-process-item h3 {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
 
-  .whatwedo-item p {
+  .our-process-item p {
     font-size: 2rem;
   }
 }
 
 /* Extra small screens */
 @media (max-width: 480px) {
-  .whatwedo-container {
+  .our-process-container {
     padding: 2rem 1rem;
   }
 
@@ -116,11 +116,11 @@
     height: 300px;
   }
 
-  .whatwedo-item h3 {
+  .our-process-item h3 {
     font-size: 2rem;
   }
 
-  .whatwedo-item p {
+  .our-process-item p {
     font-size: 1rem;
   }
 }

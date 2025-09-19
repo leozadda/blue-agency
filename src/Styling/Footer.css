@@ -1,116 +1,115 @@
 .footer {
-    width: 100%; /* Full screen */
-    display: flex;
-    justify-content: center;
-    margin: 0rem 0;
-    padding: 3em 0;
-    border-top: solid 2px #FFFFE6;
+  width: 100%; /* Full screen */
+  display: flex;
+  justify-content: center;
+  margin: 0rem 0;
+  padding: 3em 0;
+  border-top: solid 2px #ffffe6;
 }
 
 .footer-content {
-    max-width: 800px; /* Wider container to accommodate both */
-    text-align: center;
-    padding: 0 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center both elements */
+  max-width: 800px; /* Wider container to accommodate both */
+  text-align: center;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center both elements */
 }
 
 .footer-h1 {
-    font-family: 'Azeret Mono', sans-serif;
-    font-weight: 700;
-    font-size: 5rem;
-    color: #FFFFE6;
-    margin: 0 0 1rem 0;
-    width: 100%; /* h1 takes full width of container */
-    max-width: 1000px; /* But constrained to this max */
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #ffffe6;
+  margin: 0 0 1rem 0;
+  width: 100%; /* h1 takes full width of container */
+  max-width: 1000px; /* But constrained to this max */
 }
 
 .footer-p {
-    font-family: 'Clash Display', sans-serif;
-    font-size: 1.7rem;
-    color: #FFFFE6;
-    margin: 0;
-    width: 100%; /* p takes full width available */
-    max-width: 500px; /* But much narrower than h1 */
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.7rem;
+  color: #ffffe6;
+  margin: 0;
+  width: 100%; /* p takes full width available */
+  max-width: 500px; /* But much narrower than h1 */
 }
 
-.footer-button{
-    border-radius: .5em;
-    border: solid 1px #FFFFE6;
-    font-family: 'Azeret Mono', sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #000000;
-    padding: .7em;
-    margin: 3em 0;
-    transition: all 0.3s ease; /* Add this for smooth transitions */
+.footer-button {
+  border-radius: 0.5em;
+  border: solid 1px #ffffe6;
+  font-family: "Azeret Mono", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000000;
+  padding: 0.7em;
+  margin: 3em 0;
+  transition: all 0.3s ease; /* Add this for smooth transitions */
 }
 
-.footer-button:hover{
-    background-color: #ffffff;
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Drop shadow */
-    transition: all 0.3s ease; /* Smooth animation */
+.footer-button:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  transition: all 0.3s ease; /* Smooth animation */
 }
 
 /* Tablet Responsive */
 @media (max-width: 768px) {
-    .footer {
-        padding: 3rem 3em;
-    }
-    
-    .footer-content {
-        padding: 0 1.5rem;
-        max-width: 600px;
-    }
-    
-    .footer-h1 {
-        font-size: 3rem;
-        max-width: 500px;
-    }
-    
-    .footer-p {
-        font-size: 1rem;
-        max-width: 350px;
-    }
-    
-    .footer-button {
-        font-size: .7em;
-        padding: .8em 1.2em;
-        margin: 2em 0;
-    }
+  .footer {
+    padding: 3rem 3em;
+  }
+
+  .footer-content {
+    padding: 0 1.5rem;
+    max-width: 600px;
+  }
+
+  .footer-h1 {
+    font-size: 3rem;
+    max-width: 500px;
+  }
+
+  .footer-p {
+    font-size: 1rem;
+    max-width: 350px;
+  }
+
+  .footer-button {
+    font-size: 0.7em;
+    padding: 0.8em 1.2em;
+    margin: 2em 0;
+  }
 }
 
 /* Mobile Responsive */
 @media (max-width: 480px) {
-    .footer {
-        padding: 3rem 3rem;
-        margin: 1em 0;
-    }
-    
-    .footer-content {
-        padding: 0 1rem;
-        max-width: 100%;
-    }
-    
-    .footer-h1 {
-        font-size: 3rem;
-        margin: 0 0 1.5rem 0;
-        max-width: 100%;
-    }
-    
-    .footer-p {
-        font-size: 1rem;
-        max-width: 100%;
-        line-height: 1.5;
-    }
-    
-    .footer-button {
-        font-size: .7em;
-        padding: 1em 1.5em;
-        margin: 2em 0 1em 0;
-        width: auto;
-    }
-}
+  .footer {
+    padding: 3rem 3rem;
+    margin: 1em 0;
+  }
 
+  .footer-content {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .footer-h1 {
+    font-size: 3rem;
+    margin: 0 0 1.5rem 0;
+    max-width: 100%;
+  }
+
+  .footer-p {
+    font-size: 1rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+
+  .footer-button {
+    font-size: 0.7em;
+    padding: 1em 1.5em;
+    margin: 2em 0 1em 0;
+    width: auto;
+  }
+}
